@@ -1,12 +1,28 @@
 //ITENS DE COMPRA
 
-function ExpenseItem(){
+import { Container } from "./styles";
 
-    return(
-        <>
-            <h2>EXPENSE ITENS</h2>
-        </>
-    )
+interface ExpenseItemProps {
+  title: string,
+  date: string,
+  amount: number,
 }
 
-export default ExpenseItem; 
+function ExpenseItem(props: ExpenseItemProps) {
+
+  return (
+    <Container>
+      <table>
+        <tr>
+          <th>{props.title}</th>
+          <th>{props.date}</th>
+          <th>
+            <button>{props.amount}</button>
+          </th>
+        </tr>
+      </table>
+    </Container>
+  );
+}
+
+export default ExpenseItem;
