@@ -7,12 +7,14 @@ interface FrasesProps{
   autor: string
 }
 
-function FrasesMotivacionais(props: FrasesProps){
+function FrasesMotivacionais({assunto, frase, autor}: FrasesProps){
     return(
-        <>
-          <h1>{props.assunto}</h1>
-          <p>{props.frase}</p>
-          <span>{props.autor}</span>
+        <>  
+          <div>
+            <h1>{assunto}</h1>
+            <p>{frase}</p>
+            <span>{autor}</span>
+          </div>
         </>
     )
 }
