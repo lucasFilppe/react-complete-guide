@@ -7,7 +7,7 @@ export const Container = style.div`
     height: 5rem;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    margin: 2rem 0;
+    margin: 2rem;
     padding: 1rem;
     border-radius: 12px;
     background-color: #4b4b4b;
@@ -20,7 +20,8 @@ export const Container = style.div`
         border-radius: 12px;
         border: 1px solid white;
         height: 4rem;
-        margin: 3rem; 
+        padding: 1rem; 
+        margin-left: 2rem;
 
     }
 
@@ -35,10 +36,16 @@ export const Container = style.div`
         border-radius: 12px;
         border: 1px solid white;
         color: white;
-        margin: 3rem;
+        margin-left: 1rem;
+        margin-right: 2rem;
+        cursor: pointer;
+       
     }
 
-
+    button:hover {
+        background-color: black;
+      }
+    }
 
   
 `
